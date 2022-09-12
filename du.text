@@ -1,0 +1,8 @@
+#
+# find large files - Space Hogs. 
+#
+#
+# for d in /*; do egrep " ${d} " /proc/mounts > /dev/null || du -sh ${d}; done
+# find / -mount -type f | xargs du | sort -r -n -k 1 | head -n 10
+# du -sh /*
+# 
