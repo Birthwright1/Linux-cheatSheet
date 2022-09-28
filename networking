@@ -1,0 +1,43 @@
+ip a
+
+# check for default route
+ip route 
+
+# DNS lookup 
+dig
+nslookup 
+
+#show vertual network for K8 
+ip link show type veth
+
+#show bridge network 
+ip link show type bridge
+
+bridge link show | grep cni0
+
+
+# Configuration file for Ubuntu 
+
+/etc/hosts
+/etc/resolv.conf 
+/etc/nsswitch.conf
+/etc/netwrok/interfaces
+/etc/netwrok/interfaces.d
+/etc/netplan/*
+# /etc/netplan for newer releases
+# use sudo netplan apply
+
+# Configuration files for CentOS and RedHat 
+/etc/sysconfig
+/etc/sysconfig/netwrok-scripts
+
+# sudo service network restart
+
+# network Bonding 
+# 802.3ad LACP aggreated 
+# Ubuntu /etc/netplan/*.yml file setup for BOND. 
+# cat /proc/net/bonding/bond0
+
+# CentOS /etc/systemconfig/network-scripts/
+# vi ifcfg-eth0 "this is for the physcial 
+# vi ifcfg-bond0 this is for the virtual
