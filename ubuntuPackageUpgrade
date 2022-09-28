@@ -1,0 +1,19 @@
+** Patch Ubuntu 20.04 Server
+
+#sudo apt
+#sudo apt list --upgrade                          
+#sudo apt upgrade
+                This will upgrade the packages listed out on the apt list – upgrade output.
+                To omit a package for whatever reason just place package on hold, see instructions below.
+ 
+** Hold package for upgrade.
+
+#sudo apt-mark hold <package to hold>
+#sudo apt-mark showhold
+#sudo apt-mark unhold <package you held>
+#sudo apt upgrade
+
+** Update specific package
+
+#sudo apt – only-upgrade install <package name>
+Example of <package> would be zip
