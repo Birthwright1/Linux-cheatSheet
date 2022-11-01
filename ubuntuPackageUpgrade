@@ -15,5 +15,8 @@
 
 ** Update specific package
 
-#sudo apt – only-upgrade install <package name>
-Example of <package> would be zip
+#sudo apt –-only-upgrade install <package name>
+
+** Clean up space
+#sudo apt autoremove
+#sudo apt autoclean
